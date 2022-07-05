@@ -9,6 +9,9 @@ range.addEventListener("click",
     function(){
     girdmaker(range.value)
     outputs.innerText = `${range.value} x ${range.value}`
+    
+    
+
    
    
 
@@ -22,8 +25,11 @@ function girdmaker(rangeData){
     console.log(rangeData)
     esketch.style.gridTemplateColumns = `repeat(${rangeData}, 1fr)`;
     esketch.style.gridRow = `repeat(${rangeData}, 1fr)`;
-
-    let loop = rangeData * rangeData   
+    
+    let loop = rangeData * rangeData 
+    
+    esketch.innerHTML =""
+      
     let i =  0;
     while(i < loop){
         const newdivs = document.createElement('div');
