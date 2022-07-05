@@ -1,25 +1,42 @@
 const esketch = document.querySelector(".eSketchBox")
-test.innerHTML = "";
+const range = document.getElementById("range")
+const outputs = document.getElementById("outputs")
+girdmaker.innerHTML = "";
+
+console.log(range)
+
+range.addEventListener("click", 
+    function(){
+    girdmaker(range.value)
+    outputs.innerText = `${range.value} x ${range.value}`
+   
+   
+
+})
 
 // 16 x 16 grid test
-function test(){
+function girdmaker(rangeData){
     
-        let input = prompt("type number from 1 to 64")
-        let num = parseInt(input)
-        console.log(num)
-        esketch.style.gridTemplateColumns = `repeat(${num}, 1fr)`;
-        esketch.style.gridRow = `repeat(${num}, 1fr)`;
+       // let input = prompt("type number from 1 to 64")
+        //let num = parseInt(input)
+    console.log(rangeData)
+    esketch.style.gridTemplateColumns = `repeat(${rangeData}, 1fr)`;
+    esketch.style.gridRow = `repeat(${rangeData}, 1fr)`;
 
-        let loop = num * num   
-        let i =  0;
-        while(i < loop){
-            const test = document.createElement('div');
-            //test.textContent = `${i}`
-            esketch.appendChild(test)
-            i= i + 1;
-            console.log(i);
-            esketch.style.margin = '10px'
+    let loop = rangeData * rangeData   
+    let i =  0;
+    while(i < loop){
+        const newdivs = document.createElement('div');
+        
+        //test.textContent = `${i}`
+        esketch.appendChild(newdivs)
+        
+        
+        
+        i= i + 1;
+        //console.log(i);
+       
     }
+   
 }
 
-test()
