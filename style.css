@@ -25,13 +25,14 @@ main{
     grid-template-columns: repeat(4, 1fr);*/
     height: 400px;
     width: 60%;
-    outline: rebeccapurple 1px solid;
+    border-right: 1px solid black;
 }
 
 .eSketchBox div {
  height: 100%;
  width: 100%;
- outline: black solid 1px;
+ border-left: 1px solid black;
+ border-bottom: 1px solid black;
 
 }
 

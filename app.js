@@ -7,19 +7,17 @@ console.log(range)
 
 range.addEventListener("click", 
     function(){
-    girdmaker(range.value)
-    outputs.innerText = `${range.value} x ${range.value}`
-    
-    
-
    
-   
+   inputValue = range.value
+        
+    girdmaker(inputValue)
 
 })
 
 // 16 x 16 grid test
 function girdmaker(rangeData){
-    
+
+    outputs.innerText = `${range.value} x ${range.value}`
        // let input = prompt("type number from 1 to 64")
         //let num = parseInt(input)
     console.log(rangeData)
@@ -43,6 +41,8 @@ function girdmaker(rangeData){
         //console.log(i);
        
     }
+    
    
 }
+
 
