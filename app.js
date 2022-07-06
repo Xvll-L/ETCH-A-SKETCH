@@ -32,6 +32,12 @@ function girdmaker(rangeData){
     while(i < loop){
         const newdivs = document.createElement('div');
         
+        newdivs.addEventListener("mouseover", function(e){
+            let mousePoints = e.target
+            console.log(mousePoints)
+            mousePoints.style.background = "Black"
+
+        })
         //test.textContent = `${i}`
         esketch.appendChild(newdivs)
         
@@ -46,3 +52,10 @@ function girdmaker(rangeData){
 }
 
 girdmaker(4)
+
+const esketchChild = esketch.childNodes
+console.log(esketchChild)
+
+function changeColour(){
+
+}
