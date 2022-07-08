@@ -52,10 +52,3 @@ function girdmaker(rangeData){
 }
 
 girdmaker(4)
-
-const esketchChild = esketch.childNodes
-console.log(esketchChild)
-
-function changeColour(){
-
-}
